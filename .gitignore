@@ -1,0 +1,36 @@
+cd /home/srik/coding/voice_cloner/clone
+
+cat > .gitignore << 'EOF'
+# Virtual environment folders
+bin/
+lib/
+
+include/
+etc/
+share/
+pyvenv.cfg
+__pycache__/
+*.pyc
+
+# Checkpoints
+checkpoints/
+# Audio outputs
+*.wav
+*.mp3
+*.flac
+
+# Large model files
+*.pt
+*.pth
+*.bin
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OpenVoice
+OpenVoice/
+OpenVoice_v2/
+
+# OS
+.DS_Store
+EOF
